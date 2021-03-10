@@ -50,7 +50,7 @@
             <td><%= wine.name %></td>
             <td>
                 <ul>
-                <% wine_strains.each do |wine_strain| %>
+                <% wine.wine_strains.each do |wine_strain| %>
                     <li><%= wine_strain.strain.name %>(<%= wine_strain.percent %>%)</li>
                 <% end %>
                 </ul>
